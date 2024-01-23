@@ -1,8 +1,0 @@
-name: Output Event Details on issues
-on: [issues, workflow_dispatch]
-jobs:
-    read_issue:
-        runs-on: ubuntu-latest
-        steps:
-            - name: lets read github data
-              run: echo "${{toJson(github.event)}}"
